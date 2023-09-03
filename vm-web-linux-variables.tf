@@ -1,6 +1,6 @@
-################################################
+
 ## Azure Linux VM with Web Module - Variables ##
-################################################
+
 
 # Azure virtual machine settings #
 

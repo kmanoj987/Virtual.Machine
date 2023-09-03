@@ -1,6 +1,6 @@
-#############################################
-## Azure Linux VM with Web Module - Output ##
-#############################################
+
+## Azure Linux VM with Web Module - Output
+
 
 output "web_vm_name" {
   description = "Virtual Machine name"

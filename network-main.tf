@@ -13,7 +13,7 @@ resource "azurerm_resource_group" "network-rg" {
 # Create the network VNET
 resource "azurerm_virtual_network" "network-vnet" {
   name                = "${lower(replace(var.app_name," ","-"))}-${var.environment}-vnet"
-  address_space       = [var.network-vnet-cidr[0]]
+  address_space       = [var.network-vnet[0]]
   resource_group_name = azurerm_resource_group.network-rg.name
   location            = azurerm_resource_group.network-rg.location
   tags = {
@@ -25,7 +25,7 @@ resource "azurerm_virtual_network" "network-vnet" {
 # Create a subnet for Network
 resource "azurerm_subnet" "network-subnet" {
   name                 = "${lower(replace(var.app_name," ","-"))}-${var.environment}-subnet"
-  address_prefixes     = [var.network-subnet-cidr[0]]
+  address_prefixes     = [var.network-subnet[0]]
   virtual_network_name = azurerm_virtual_network.network-vnet.name
   resource_group_name  = azurerm_resource_group.network-rg.name
 }
