@@ -4,22 +4,22 @@
 
 # Azure authentication variables
 
-variable "azure-subscription-id" {
+variable "az-subscription-id" {
   type        = string
   description = "Azure Subscription ID"
 }
 
-variable "azure-client-id" {
+variable "az-client-id" {
   type        = string
   description = "Azure Client ID"
 }
 
-variable "azure-client-secret" {
+variable "az-client-secret" {
   type        = string
   description = "Azure Client Secret"
 }
 
-variable "azure-tenant-id" {
+variable "az-tenant-id" {
   type        = string
   description = "Azure Tenant ID"
 }

@@ -8,8 +8,8 @@ location    = "westeurope"
 
 # Network 
 
-network-vnet-cidr   = ["10.128.0.0/16"]
-network-subnet-cidr = ["10.128.1.0/24"]
+network-vnet   = ["10.128.0.0/16"]
+network-subnet = ["10.128.1.0/24"]
 
 
 # VM with SQL
